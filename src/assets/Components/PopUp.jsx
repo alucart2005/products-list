@@ -6,7 +6,6 @@ const PopUp = ({text,imagen}) => {
       <div className='div__div--popUp'>
         <h2 className='div__h2--popUp'>{text}</h2>
       </div>
-
     </div>
   );
 }
