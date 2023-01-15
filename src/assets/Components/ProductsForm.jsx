@@ -79,8 +79,8 @@ const ProductsForm = ({ submitButton, sendOfProducsForm, sendAppToForm, sendForm
           <label htmlFor='price-id' className='label__error'>This information is required</label>
         }
       </div>
-      <div className='form__div'>
-        <label className="form__div--label" htmlFor="isAvailable-id">Available</label>
+      <div className='form__butom'>
+        <label className="form__div--label" htmlFor="isAvailable-id">Product availability</label>
         <div className='form__div--switch'>
           <input className='label__div--input form__label--inputCheckbox'
           type="checkbox"
