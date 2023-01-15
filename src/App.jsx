@@ -9,7 +9,6 @@ import Error from './assets/Components/Error';
 
 
 function App() {
-  //Hooks
   const [updateProducts, setUpdateProducts] = useState(null);
   const [data, useData] = useState([]);
   const [isLoad, setIsLoad] = useState(false);
@@ -18,8 +17,6 @@ function App() {
   const [isUpdate, setIsUpdate,] = useState(false);
   const [isError, setIsError] = useState(false);
 
-  //Function
-
   function timeInScreen(setHook) {
     setHook(true)
     setTimeout(() => {
@@ -27,7 +24,6 @@ function App() {
     }, 3000)
   }
 
-  //  GET request 
   const getData = async () => {
     setIsLoad(true)
     try {
@@ -47,7 +43,6 @@ function App() {
     getData()
   }, []);
 
-  //  POST request 
   const sendOfProducsForm = (body) => {
 
     const postData = async () => {
@@ -68,9 +63,7 @@ function App() {
     postData();
   };
 
-  //  DELETE request 
   const deleteObeject = (body) => {
-
     const deleteData = async () => {
       setIsLoad(true)
       try {
@@ -81,17 +74,14 @@ function App() {
         }
       } catch (error) {
         timeInScreen(setIsError);
-
       } finally {
         setIsLoad(false)
       };
     };
     setUpdateProducts(null)
     deleteData();
-
   };
 
-  // PUT request 
   const modifyObject = (body) => {
     setUpdateProducts(body);
   }
@@ -109,18 +99,15 @@ function App() {
       } catch (error) {
         timeInScreen(setIsError);
 
-      } finally {
-        setIsLoad(false)
-      };
+      } finally { setIsLoad(false) };
     }
     setUpdateProducts(null)
     putData();
   }
 
-  // componentes
   const componentProductsForm =
     <ProductsForm
-      submitButton={'Crear'}
+      submitButton={'Create'}
       sendOfProducsForm={sendOfProducsForm}
       sendAppToForm={updateProducts}
       sendFormToApp={sendFormToApp}
@@ -133,38 +120,30 @@ function App() {
       deleteObeject={deleteObeject}
       modifyObject={modifyObject}
     />;
-
-
   const componentError = <Error />
   const componentLoad = <Load />
   const componentCreate = <PopUp
-    text={'Producto creado con exito!'}
-    imagen={'cheque.png'}
+  text={'Product created successfully!'}
   />
   const componentDelete = <PopUp
-    text={'Producto eliminado con exito!'}
-    imagen={'delete.png'}
+    text={'Product Delete successfully!'}  />
+    const componentEdit = <PopUp
+    text={'Product edited successfully!'}
   />
-  const componentEdit = <PopUp
-    text={'Producto modificado con exito!'}
-    imagen={'edit.png'}
-  />
-
-
 
   return (
     <div className="App">
-      {isError && componentError}
-
-      {isLoad && componentLoad}
-      {isCreated && componentCreate}
-      {isDelete && componentDelete}
-      {isUpdate && componentEdit}
-
-      {componentProductsForm}
-
-      {componentProductsList}
-
+      <div>
+        {isError && componentError}
+        {isLoad && componentLoad}
+        {isCreated && componentCreate}
+        {isDelete && componentDelete}
+        {isUpdate && componentEdit}
+        {componentProductsForm}
+      </div>
+      <div>
+        {componentProductsList}
+      </div>
     </div>
   )
 }

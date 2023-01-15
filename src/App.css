@@ -1,10 +1,11 @@
+
+
 .form {
   width: 370px;
   box-sizing: border-box;
   height: 30%;
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   align-items: center;
   background-color: var(--primary-color);
@@ -306,3 +307,5 @@
   margin-top: 40px;
   width: 350px;
 }
+
+

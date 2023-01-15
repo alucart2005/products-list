@@ -11,17 +11,17 @@ const ProductsList = ({ dataForm, deleteButton, modifyButton, deleteObeject, mod
           :
           'ul__li--NoDisponible'}
           key={index}>
-          <h2 className='ul__li--h2' ><span className='li__h2--span' >Nombre: </span>{obejectForm.name}</h2>
-          <h3 className='ul__li--h3' ><span className='li__h2--span'>Categoria: </span> {obejectForm.category}</h3>
-          <h3 className='ul__li--h3' ><span className='li__h2--span'>Precio: </span> {obejectForm.price}</h3>
+          <h2 className='ul__li--h2' ><span className='li__h2--span' >Name: </span>{obejectForm.name}</h2>
+          <h3 className='ul__li--h3' ><span className='li__h2--span'>Category: </span> {obejectForm.category}</h3>
+          <h3 className='ul__li--h3' ><span className='li__h2--span'>Price: </span> {obejectForm.price}</h3>
           {obejectForm.isAvailable ?
             <div className='ul__li--divAvailable'>
-              <h4 className='ul__li--h4'>Disponible <img className='icon--available' src="/cheque.png" alt="Disponible" />
+              <h4 className='ul__li--h4'>Not available <img className='icon--available' src="/cheque.png" alt="Not available" />
               </h4>
             </div>
             :
             <div className='ul__li--divAvailable'>
-              <h4 className='ul__li--h4'>Disponible <img className='icon--available' src="/cerrar.png" alt="No disponible" />
+              <h4 className='ul__li--h4'>Available <img className='icon--available' src="/cerrar.png" alt="Available" />
               </h4>
             </div>
           }
