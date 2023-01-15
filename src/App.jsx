@@ -141,7 +141,7 @@ function App() {
         {isUpdate && componentEdit}
         {componentProductsForm}
       </div>
-      <div>
+      <div >
         {componentProductsList}
       </div>
     </div>

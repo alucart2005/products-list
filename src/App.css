@@ -1,5 +1,18 @@
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #eaebe4;
+}
 
+h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(34, 29, 29);
+}
 .form {
   width: 370px;
   box-sizing: border-box;
@@ -17,10 +30,10 @@
   margin-top: 20px;
 }
 
-.form:hover {
+/* .form:hover {
   box-shadow: var(--shadow-elevation-high);
   cursor: pointer;
-}
+} */
 
 .form__div,
 .form__div--switch {
@@ -141,30 +154,47 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.ul__li--disponible,
-.ul__li--NoDisponible {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  box-shadow: var(--shadow-elevation-medium);
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px;
-  margin: 10px;
-  color: var(--text-color);
-  font-family: 'Open Sans', sans-serif;
-  margin: 20px;
+  background: radial-gradient(circle, #ffc0cb, #ffffe0);
 }
 
 .ul__li--disponible {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: linear-gradient(to right, #e8e2e3, #ffffe0);  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  min-height: 300;
+  max-height: 400px;
+  padding: 20px;
+  margin: 20px;
+}
+
+
+/* .ul__li--NoDisponible {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(3, 5, 11);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 270px;
+  padding: 20px;
+  margin: 20px;
+}
+
+
+
+
+
+
+/* .ul__li--disponible {
   background-color: var(--tertiary-color);
 }
 
 .ul__li--NoDisponible {
   background-color: #f5f5f58a;
-}
+} */ */
 
 .ul__li--disponible:hover {
   box-shadow: var(--shadow-elevation-medium);
@@ -254,11 +284,11 @@
 
 .div--popUp {
     position: fixed;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 70%;
+    max-height: 50%;
     overflow: auto;
     background-color: #fff;
     padding: 20px;
@@ -310,4 +340,12 @@
   width: 350px;
 }
 
+.card {
+  transition: transform 0.3s ease-in-out;
+  opacity: 1;
+}
 
+.card:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}

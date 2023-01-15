@@ -5,15 +5,12 @@ const ProductsList = ({ dataForm, deleteButton, modifyButton, deleteObeject, mod
   return (
     <ul className='ul'>
       {dataForm.map((obejectForm, index) =>
-        <li className={obejectForm.isAvailable
-          ?
-          'ul__li--disponible'
-          :
-          'ul__li--NoDisponible'}
+        <div className='card'>
+          <li className='ul__li--disponible'
           key={index}>
-          <h2 className='ul__li--h2' ><span className='li__h2--span' >Name: </span>{obejectForm.name}</h2>
-          <h3 className='ul__li--h3' ><span className='li__h2--span'>Category: </span> {obejectForm.category}</h3>
-          <h3 className='ul__li--h3' ><span className='li__h2--span'>Price: </span> {obejectForm.price}</h3>
+          <h2 ><span className='li__h2--span' >Name: </span>{obejectForm.name}</h2>
+          <h3 ><span className='li__h2--span'>Category: </span> {obejectForm.category}</h3>
+          <h3 ><span className='li__h2--span'>Price: </span> {obejectForm.price}</h3>
           {obejectForm.isAvailable ?
             <div className='ul__li--divAvailable'>
               <h4 className='ul__li--h4'>Not available <img className='icon--available' src="/cheque.png" alt="Not available" />
@@ -30,9 +27,9 @@ const ProductsList = ({ dataForm, deleteButton, modifyButton, deleteObeject, mod
             <button className='ul__li--button' onClick={() => modifyObject(obejectForm)}>{<img className='button--icon' src={`${modifyButton}`} alt="delete" />}</button>
           </div>
         </li>
+        </div>
       )}
     </ul>
-
   );
 };
 

@@ -39,7 +39,7 @@ const ProductsForm = ({ submitButton, sendOfProducsForm, sendAppToForm, sendForm
   }, [sendAppToForm])
 
   return (
-    <form className="form" onSubmit={handleSubmit(getFormData)}>
+    <form className="form " onSubmit={handleSubmit(getFormData)}>
       <div className='form__div'>
         <label className="form__div--label" htmlFor="name-id">Product Name</label>
         <input className='label__div--input'
