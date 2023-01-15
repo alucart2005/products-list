@@ -10,7 +10,7 @@ const ProductsList = ({ dataForm, deleteButton, modifyButton, deleteObeject, mod
           key={index}>
           <h2 ><span className='li__h2--span' >Name: </span>{obejectForm.name}</h2>
           <h3 ><span className='li__h2--span'>Category: </span> {obejectForm.category}</h3>
-          <h3 ><span className='li__h2--span'>Price: </span> {obejectForm.price}</h3>
+          <h3 ><span className='li__h2--span'>Price: </span> {`$ ${obejectForm.price}`}</h3>
           {obejectForm.isAvailable ?
             <div className='ul__li--divAvailable'>
               <h4 className='ul__li--h4'>Not available <img className='icon--available' src="/cheque.png" alt="Not available" />

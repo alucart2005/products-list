@@ -21,7 +21,7 @@ function App() {
     setHook(true)
     setTimeout(() => {
       setHook(false)
-    }, 3000)
+    }, 1300)
   }
 
   const getData = async () => {

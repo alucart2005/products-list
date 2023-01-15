@@ -12,30 +12,38 @@ h1, h2, h3 {
   margin-top: 10px;
   margin-bottom: 10px;
   color: rgb(34, 29, 29);
+  margin-bottom: -5px;
 }
 .form {
   width: 370px;
   box-sizing: border-box;
-  height: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #3fb599a8;
-  padding: 20px;
-  border-radius: 7px;
+  padding: 10px;
+  border-radius: 5px;
   box-shadow: var(--shadow-elevation-medium);
   font-family: 'Open Sans', sans-serif;
   transition: all 0.5s ease;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: -10px;
 }
 
-/* .form:hover {
-  box-shadow: var(--shadow-elevation-high);
-  cursor: pointer;
-} */
+.form__div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  position: relative;
+  margin-bottom: -20px;
+}
 
-.form__div,
+
+/* .form__div,
 .form__div--switch {
   width: 100%;
   display: flex;
@@ -44,7 +52,13 @@ h1, h2, h3 {
   align-items: center;
   margin: 5px;
   position: relative;
-}
+  margin-bottom: -20px;
+} */
+
+
+
+
+
 
 
 .form__div--label {
@@ -98,7 +112,7 @@ h1, h2, h3 {
   padding: 0;
   border: none;
   appearance: none;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color:var(--text-color);
   min-width: 40px;
   min-height: 40px;
@@ -112,8 +126,8 @@ h1, h2, h3 {
   background-color: var(--secondary-color);
   color: var(--tertiary-color);
   padding: 8px;
-  border-radius: 5px;
-  width: 120px;
+  border-radius: 25px;
+  width: 50%;
   margin-top: 10px;
   transition: all 0.5s ease;
   font-weight: 700;
@@ -217,6 +231,8 @@ h1, h2, h3 {
   justify-content: center;
   align-items: center;
   text-decoration: initial;
+  margin-bottom: -5px;
+  margin-top: -30px;
 }
 
 .ul__li--button {
@@ -262,9 +278,9 @@ h1, h2, h3 {
     max-width: 70%;
     max-height: 50%;
     overflow: auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    background: #b1aec8;
+    padding: 5px;
+    border-radius: 3px;
     z-index: 3;
 }
 
@@ -315,6 +331,7 @@ h1, h2, h3 {
 .card {
   transition: transform 0.3s ease-in-out;
   opacity: 1;
+  
 }
 
 .card:hover {
