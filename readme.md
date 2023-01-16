@@ -1,34 +1,32 @@
-## Descripción  🇦🇷🇪🇸
+# Drinks-and-Shots-ver-2.0
+## Description
 
- Este proyecto es un sistema CRUD (Crear, Leer, Actualizar y Eliminar) para controlar productos. Diseñado para facilitar el manejo de inventario de una tienda comercial. Utilice peticiones GET, PUT, POST y DELETE en React. 
+Using an API and taking it into React, creating components and rendering its content.
+Use the Custom-hook-form, axios libraries and the API with the GET, POST, PUT, DELETE methods.
+
+The endpoint used is this:
+https://documenter.getpostman.com/view/17877993/2s8Z76wpWA.
+
+## Author ✍
+
+**NAPOLEON ANAYA ROMERO**
+
+-	[https://www.linkedin.com/in/napoleon-de-jesus-anaya-romero-8872ba127/](https://www.linkedin.com/in/napoleon-de-jesus-anaya-romero-8872ba127/)
+
+-	[https://drinks-and-shots-ver2.netlify.app/](https://drinks-and-shots-ver2.netlify.app/)
+
+-	[https://github.com/alucart2005/products-list](https://github.com/alucart2005/products-list)
+
+## See live example
+
+- [https://drinks-and-shots-ver2.netlify.app/](https://drinks-and-shots-ver2.netlify.app/)
  
- Se puede ver en Github y en línea. ¡Los invito a visitar y compartir!
-
-This project is a CRUD (Create, Read, Update and Delete) system for managing products. Designed to streamline inventory management for a commercial store. 
-
-I used GET, PUT, POST and DELETE requests in React. This project can be viewed on Github and online. I invite you to visit and share!
+![..](https://raw.githubusercontent.com/alucart2005/products-list/Products-List/public/screen.png)
 
 
-## Autor 
+## To install
 
-	**GABRIEL ALEJANDRO MARTINEZ**
+This project needs installation of node modules. Just run npm i in the folder containing the cloned file, or, npm install.
 
-	*[Linkedin](https://www.linkedin.com/in/gabrielmartinezghioma/)
-	*[Portfolio](https://gabrielmartinezghioma.netlify.app/)
-
-## Ver ejemplo en vivo
-
-	- [https://ghiomacrud.netlify.app/](https://ghiomacrud.netlify.app/)
-![Image text](https://github.com/gabrielmartinezghioma/ReactAcademloWoork3/blob/main/public/screen.png)
-
-## Instalacion 
-
-	Este proyecto necesita instalación de node modules. Para ello haga npm install o simplemte npm i 
-
-## Contratación 
-	Si quieres contratarme puedes escribirme a gabrielalejandromartinez4@gmail.com
-
-## Licencia
-
-	Mit Public License v3.0
-	No puede usarse comercialemente.
+## Hiring 
+If you want to hire me you can write to napoleonanaya@gmail.com
