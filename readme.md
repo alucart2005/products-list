@@ -1,4 +1,4 @@
-# Drinks-and-Shots-ver-2.0
+# Product's List ver-1.0
 ## Description
 
 Using an API and taking it into React, creating components and rendering its content.
@@ -13,13 +13,13 @@ https://documenter.getpostman.com/view/17877993/2s8Z76wpWA.
 
 -	[https://www.linkedin.com/in/napoleon-de-jesus-anaya-romero-8872ba127/](https://www.linkedin.com/in/napoleon-de-jesus-anaya-romero-8872ba127/)
 
--	[https://drinks-and-shots-ver2.netlify.app/](https://drinks-and-shots-ver2.netlify.app/)
+-	[https://products-list-dev.netlify.app/](https://products-list-dev.netlify.app/)
 
 -	[https://github.com/alucart2005/products-list](https://github.com/alucart2005/products-list)
 
 ## See live example
 
-- [https://drinks-and-shots-ver2.netlify.app/](https://drinks-and-shots-ver2.netlify.app/)
+- [https://products-list-dev.netlify.app/](https://products-list-dev.netlify.app/)
  
 ![..](https://raw.githubusercontent.com/alucart2005/products-list/Products-List/public/screen.png)
 
