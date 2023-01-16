@@ -1,6 +1,6 @@
+import './App.css'
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import './App.css'
 import Load from './assets/Components/Load';
 import ProductsForm from './assets/Components/ProductsForm';
 import ProductsList from './assets/Components/ProductsList';
