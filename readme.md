@@ -1,4 +1,4 @@
-# Products List ver-1.0
+# Product's List ver-1.0
 ## Description
 
 Using an API and taking it into React, creating components and rendering its content.
