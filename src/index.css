@@ -19,5 +19,5 @@ body, .App{
   box-sizing: border-box;
   max-width: 100%;
   position: relative;
-  background: linear-gradient(to top, #ff69b4, #ff00cc, #ffd700)
+  background: rgb(217, 192, 215)
 }
